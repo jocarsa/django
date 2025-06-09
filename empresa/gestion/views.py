@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def inicio(request):
-    return HttpResponse("Bienvenido a la empresa")
+    return render(request, 'gestion/inicio.html')
